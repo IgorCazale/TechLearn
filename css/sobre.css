@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #00ffff;
+    padding: 20px;
+}
+
+.header-container .left-side, .header-container .right-side {
+    width: 10%;
+}
+
+.header-container .center {
+    text-align: center;
+    width: 80%;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-container h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.header-container p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn-explore {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: #0056b3;
+}
+
+.content-container {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.content-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-section {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    text-align: center; /* Centraliza a seção 'Nossa Equipe' */
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/* Estilo geral do body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+/* Menu de navegação */
+.navbar {
+    background-color: #333;
+    overflow: hidden; /* Garante que o conteúdo do menu não vaze */
+}
+
+.navbar a {
+    float: left; /* Alinha os itens à esquerda */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+}
+
+/* Responsividade básica: Quando a tela for menor que 600px, o menu ficará empilhado */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none; /* Os itens não vão flutuar mais */
+        width: 100%; /* Cada item vai ocupar a largura total */
+    }
+}
+
+/* Outras regras de estilo da página */
+.content-container {
+    padding: 20px;
+}
+/* Seção de Nossos Professores */
+.professors-section {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.professors-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.professor-member {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.professor-member img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.professor-member h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.professor-member p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+}

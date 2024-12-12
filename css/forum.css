@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+/* Topo preto */
+.top-header {
+    background-color: #333;
+    color: #00ffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #00ffff;
+    padding: 60px 0;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-container h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Conteúdo da Página */
+.content-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
+}
+
+/* Títulos das Seções */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Títulos das Categorias */
+.category-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* Cartões de Discussões */
+.discussion-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.discussion-card h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.discussion-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.discussion-card .info {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.discussion-card a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.discussion-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.btn-explore {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-explore:hover {
+    background-color: #218838;
+}
+
+/* Navegação entre páginas */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+body {
+  font-size:12px;
+  font-family:sans-serif;
+  background:#b8e3ef;
+  text-align:center;
+}
+.container {
+  text-align:center;
+  /* perfect centering */
+  left:50%;
+  top:50%;
+  position: absolute;
+  transform:translate(-50%,-50%);
+  width:100%;
+  max-width:350px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  background:#93c7d6;
+  max-height: 0;
+  transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  visibility: hidden;
+  border-radius:3px;
+  opacity:0;
+  transform:rotate(180deg);
+}
+
+li a {
+  padding:12px 0;
+  display: block;
+  transition:.25s
+}
+li a:hover {
+  background: #6fabbc;
+}
+
+a {
+  color:#fff;
+  text-transform:uppercase;
+  text-decoration: none;
+}
+i {
+  padding:20px;
+  background: rgba(255,255,255,.75);
+  border-radius:3px;
+  color:#6fabbc;
+  transition:.25s;
+  animation: 1.25s bounce infinite;
+}
+i:hover {
+  cursor:pointer;
+  background: rgba(255,255,255,.95);
+  animation-play-state: paused;
+}
+ul.open {
+  max-height: 480px;
+  visibility: visible;
+  opacity:1;
+  transform:rotate(0);
+}
+/* animation */
+@keyframes bounce {
+  0% {margin-top:0;}
+  50% {margin-top:-15px; margin-bottom:15px;}
+  100% {margin-top:0;}
+}
+
+/* Credit */
+
+.container ~ * {
+  color:#fff;
+  text-transform:uppercase;
+  position: absolute;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+}
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #b8e3ef;
+    text-align: center;
+    margin: 0; /* Remover margens padrão */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+/* Estilo geral do body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+/* Menu de navegação */
+.navbar {
+  background-color: #333;
+  overflow: hidden; /* Garante que o conteúdo do menu não vaze */
+}
+
+.navbar a {
+  float: left; /* Alinha os itens à esquerda */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd; /* Cor de fundo ao passar o mouse */
+  color: black; /* Cor do texto ao passar o mouse */
+}
+
+/* Responsividade básica: Quando a tela for menor que 600px, o menu ficará empilhado */
+@media screen and (max-width: 600px) {
+  .navbar a {
+      float: none; /* Os itens não vão flutuar mais */
+      width: 100%; /* Cada item vai ocupar a largura total */
+  }
+}
+
+/* Outras regras de estilo da página */
+.content-container {
+  padding: 20px;
+}
