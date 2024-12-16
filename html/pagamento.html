@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - TechLearn</title>
+    <link rel="stylesheet" href="../css/pagamento.css">
+    <script src="../js/pagamento.js" defer></script>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Pagamento do Plano</h1>
+        <p>Você escolheu o <span id="planoSelecionado"></span>. Complete as informações abaixo para finalizar a compra.</p>
+    </div>
+
+    <!-- Formulário de pagamento -->
+    <div class="payment-form-container">
+        <form id="paymentForm">
+            <label for="cartao">Número do Cartão</label>
+            <input type="text" id="cartao" name="cartao" placeholder="Digite o número do seu cartão" required>
+
+            <label for="bandeira">Bandeira do Cartão</label>
+            <input type="text" id="bandeira" name="bandeira" placeholder="Visa, MasterCard, Elo..." disabled>
+
+            <label for="nome">Nome Impresso no Cartão</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome conforme impresso no cartão" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Digite o CVV" required>
+
+            <label for="validade">Data de Validade</label>
+            <input type="text" id="validade" name="validade" placeholder="MM/AA" required>
+
+            <button type="submit">Confirmar Pagamento</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer-container">
+        <p>&copy; 2024 TechLearn. Aprendizado sem limites.</p>
+    </div>
+</body>
+</html>
