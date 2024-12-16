@@ -16,7 +16,8 @@ document.getElementById('cadastroForm').addEventListener('submit', async (event)
 
         const data = await response.json();
         if (response.ok) {
-            alert(data.message);
+            alert(data.message);  // Mostra mensagem de sucesso
+            window.location.href = '../html/planos.html';  // Redireciona para a página de planos após o cadastro
         } else {
             alert(data.message || 'Erro ao cadastrar');
         }
