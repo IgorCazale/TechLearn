@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escolha seu Plano</title>
   <link rel="stylesheet" href="../css/planos.css">
+  <link rel="stylesheet" href="../css/pagamento.css"> <!-- Link para o CSS do popup -->
 </head>
 <body>
   <div class="container">
@@ -26,7 +27,7 @@
           <li>Sem acesso a webinars</li>
           <li>Capacidade limitada de upload de arquivos</li>
         </ul>
-        <button class="btn">Escolher Plano Gratuito</button>
+        <button class="btn" id="abrirPopup">Escolher Plano Gratuito</button> <!-- Botão para abrir o popup -->
       </div>
 
       <!-- Plano GOLD -->
@@ -46,7 +47,7 @@
           <li>Ferramentas de edição avançada para projetos</li>
           <li>Capacidade de upload de arquivos maiores</li>
         </ul>
-        <button class="btn">Escolher Plano GOLD</button>
+        <button class="btn" id="abrirPopup">Escolher Plano GOLD</button> <!-- Botão para abrir o popup -->
       </div>
 
       <!-- Plano PRO -->
@@ -69,13 +70,58 @@
           <li>Capacidade de upload ilimitado de arquivos</li>
           <li>Acesso a ferramentas de personalização de interface</li>
         </ul>
-        <button class="btn">Escolher Plano PRO</button>
+        <button class="btn" id="abrirPopup">Escolher Plano PRO</button> <!-- Botão para abrir o popup -->
       </div>
     </div>
   </div>
 
-  <script src="../js/planos.js"></script>
+<!-- Popup para pagamento -->
+<div id="popupPagamento" class="popup">
+  <div class="popup-conteudo">
+    <span class="fechar" onclick="closePopup()">&times;</span>
+    <h2>Informações de Pagamento</h2>
+    <p><strong>Plano Selecionado:</strong> <span id="planoSelecionado"></span></p>
+    <p><strong>Valor:</strong> R$<span id="valorPlano"></span></p>
 
+    <form action="#">
+      <label for="numeroCartao">Número do Cartão</label>
+      <input type="text" id="numeroCartao" placeholder="Número do Cartão" required>
+
+      <label for="nomeCartao">Nome no Cartão</label>
+      <input type="text" id="nomeCartao" placeholder="Nome como no cartão" required>
+
+      <label for="dataExpiracao">Data de Expiração</label>
+      <input type="text" id="dataExpiracao" placeholder="MM/AA" maxlength="5" required>
+
+
+      <label for="codigoCVV">Código CVV</label>
+      <input type="text" id="codigoCVV" placeholder="Código CVV" required>
+
+      <!-- Seção para exibição das bandeiras -->
+<div class="bandeiras-container">
+  <span id="visa" class="bandeira" style="background-image: url('../imagens/bandeiravisa.png');"></span>
+  <span id="mastercard" class="bandeira" style="background-image: url('../imagens/bandeiramastercard.png');"></span>
+  <span id="amex" class="bandeira" style="background-image: url('../imagens/bandeiraamexpress.png');"></span>
+  <span id="elo" class="bandeira" style="background-image: url('../imagens/bandeiraelo.png');"></span>
+</div>
+
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="pagamentoPadrao">
+        <label for="pagamentoPadrao">Usar como meu pagamento padrão</label>
+      </div>
+
+      <button type="submit" class="btn">Confirmar Pagamento</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+  <script src="../js/planos.js"></script>
+  <script src="../js/pagamento.js"></script> <!-- Link para o script do popup -->
+  
   <footer>
     <p>&copy; 2024 TechLearn. Todos os direitos reservados.</p>
   </footer>

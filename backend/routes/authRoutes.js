@@ -47,7 +47,7 @@ router.post('/login', async (req, res) => {
         // Comparar a senha enviada com a senha armazenada
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
-            return res.status(401).json({ message: 'Senha incorreta!' });
+            return res.status(401).json({ message: 'Usuário ou Senha Inválidos!' });
         }
 
         // Gerar o token JWT

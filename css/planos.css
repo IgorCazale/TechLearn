@@ -82,3 +82,132 @@ body {
     color: #aaa;
   }
   
+
+  /* Estilos existentes do planos.css... */
+
+/* Estilo básico do popup */
+.popup {
+  display: none; /* Começa escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Coloca o popup acima de outros elementos */
+}
+
+.popup.open {
+  display: flex; /* Exibe o popup quando a classe open é adicionada */
+}
+
+.popup-conteudo {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.popup-conteudo h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.popup-conteudo form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-conteudo input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.popup-conteudo .select-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.popup-conteudo .select-container select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.popup-conteudo .select-container img {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+}
+
+.popup-conteudo .checkbox-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.popup-conteudo .checkbox-container input {
+  margin-right: 10px;
+}
+
+.popup-conteudo .btn {
+  background-color: #f5a623;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.popup-conteudo .btn:hover {
+  background-color: #d68b22;
+}
+
+.fechar {
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+.fechar:hover {
+  color: #333;
+}
+/* Container para as bandeiras */
+.bandeiras-container {
+  display: flex;
+  gap: 10px; /* Espaçamento entre as bandeiras */
+  margin-top: 10px;
+}
+
+/* Estilo das bandeiras */
+.bandeira {
+  width: 40px; /* Largura da bandeira */
+  height: 30px; /* Altura da bandeira */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px; /* Bordas arredondadas, opcional */
+  display: none; /* Inicialmente as bandeiras ficam escondidas */
+}
+
