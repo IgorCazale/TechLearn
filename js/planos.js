@@ -141,23 +141,21 @@ function openPopup() {
     document.getElementById("popupPagamento").classList.add("open");
 }
 
-// Função para fechar o popup
-function closePopup() {
-    document.getElementById("popupPagamento").classList.remove("open");
-}
-
 // Função para confirmar o pagamento
 document.getElementById("confirmarPagamento").addEventListener("click", () => {
     // Exibir mensagem de sucesso
     const mensagemSucesso = document.getElementById("mensagemSucesso");
     mensagemSucesso.textContent = "Pagamento realizado com sucesso, você vai receber um email com o comprovante.";
 
+    // Tornar a mensagem visível
+    mensagemSucesso.style.display = "block";  // Certifique-se de que a mensagem será visível
+
     // Esconder o popup de pagamento (se necessário)
     closePopup();
 
     // Exibir a mensagem de sucesso por alguns segundos antes de redirecionar
     setTimeout(() => {
-        // Redireciona para a página de login
-        window.location.href = "login.html"; // Substitua "login.html" pela URL correta
-    }, 3000); // Redireciona após 3 segundos
+        // Redireciona para a página de login após 5 segundos
+        window.location.href = "../html/login.html"; // Substitua "login.html" pela URL correta
+    }, 5000); // Redireciona após 5 segundos
 });
