@@ -1,0 +1,14 @@
+# Ignora imagens na contagem de linguagens
+/imagens/* linguist-vendored
+
+# Garante que HTML, CSS e JS sejam detectados
+/html/*.html linguist-detectable=true
+/css/*.css linguist-detectable=true
+/js/*.js linguist-detectable=true
+
+# Backend também deve ser detectado como JS (Node)
+backend/**/*.js linguist-detectable=true
+server.js linguist-detectable=true
+
+# Ignora dependências se você tiver node_modules (mesmo não mostrando aqui)
+node_modules/* linguist-vendored
