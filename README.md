@@ -51,17 +51,52 @@ Abra `html/index.html` diretamente no navegador para testar o front-end.
 
 ```text
 TechLearn/
-├── backend/               # Código do backend (Node.js)
-│   └── db.js              # Conexão simulada com banco
-├── css/                   # Estilos CSS
-│   └── style.css
-├── html/                  # Páginas HTML
-│   └── index.html
-├── imagens/               # Imagens usadas no site
-├── js/                    # Scripts JavaScript
-│   └── script.js
-├── server.js              # Servidor básico com Node.js
-└── README.md              # Documentação do projeto
+├── backend/                   # Código do backend com Node.js
+│   ├── controllers/           # Lógica dos controladores
+│   │   └── authController.js
+│   ├── models/                # Modelos (ex: usuário)
+│   │   └── user.js
+│   ├── routes/                # Definições de rotas
+│   │   └── authRoutes.js
+│   └── server.js              # Servidor principal com Node.js
+│
+├── css/                       # Estilos da interface
+│   ├── cadastro.css
+│   ├── cursos.css
+│   ├── forum.css
+│   ├── home.css
+│   ├── login.css
+│   ├── menu.css
+│   ├── planos.css
+│   ├── projetos.css
+│   └── sobre.css
+│
+├── html/                      # Páginas HTML do site
+│   ├── cadastro.html
+│   ├── cursos.html
+│   ├── forum.html
+│   ├── home.html
+│   ├── login.html
+│   ├── menu.html
+│   ├── planos.html
+│   ├── projetos.html
+│   └── sobre.html
+│
+├── imagens/                   # Imagens utilizadas
+│
+├── js/                        # Scripts JavaScript
+│   ├── cadastro.js
+│   ├── forum.js
+│   ├── home.js
+│   ├── menu.js
+│   └── planos.js
+│
+├── package.json               # Dependências do projeto
+├── package-lock.json          # Versões exatas das dependências
+├── .gitattributes             # Controle de linguagens no GitHub
+├── .gitignore                 # Arquivos ignorados pelo Git
+└── README.md                  # Documentação do projeto
+
 ```
 
 ---
